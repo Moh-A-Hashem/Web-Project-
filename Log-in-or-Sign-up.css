@@ -7,13 +7,14 @@ div.set1 {
 	 top: 175px;
 	 width: auto;
 	 height: auto;
+margin: auto;
 }
 div.set2 {
    position: absolute;
 	top: 325px;
 	 width: auto;
 	 height: auto;
-
+margin: auto;
   
 }
 .u-section-1 .u-sheet-1 {
