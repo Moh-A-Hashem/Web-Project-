@@ -8,6 +8,7 @@ div.set1 {
 	 width: auto;
 	 height: auto;
 margin: auto;
+align: center;
 }
 div.set2 {
    position: absolute;
@@ -15,7 +16,7 @@ div.set2 {
 	 width: auto;
 	 height: auto;
 margin: auto;
-  
+  align: center;
 }
 .u-section-1 .u-sheet-1 {
   min-height: 750px;
