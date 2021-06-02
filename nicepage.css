@@ -1,8 +1,4 @@
-/*begin-commonstyles library*//*!
- * froala_editor v3.2.3 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2020 Froala Labs
- */
+
 
 .fr-clearfix::after {
   clear: both;
@@ -12254,45 +12250,6 @@ section.u-image,
   pointer-events: auto;
   pointer-events: initial;
 }
-.u-sticky {
-  position: fixed;
-  top: 0;
-  transition: background-color 250ms ease;
-}
-@supports (position: sticky) {
-  .u-sticky {
-    position: sticky;
-  }
-}
-@supports (position: -webkit-sticky) {
-  .u-sticky {
-    position: -webkit-sticky;
-  }
-}
-.u-overlap .u-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-.u-sticky,
-.u-overlap .u-header {
-  z-index: 20;
-}
-.u-overlap .u-header.u-sticky {
-  position: fixed;
-}
-.u-overlap.u-overlap-transparent .u-header {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-.u-overlap.u-offcanvas-opened .u-header.u-sticky {
-  z-index: auto;
-  position: absolute !important;
-}
-.u-overlap.u-offcanvas-opened .u-header.u-sticky + section {
-  z-index: -1;
-}
 .u-stick-footer {
   display: flex;
   flex-direction: column;
@@ -12388,6 +12345,45 @@ section.u-image,
     border-left: 0 !important;
     border-right: 0 !important;
   }
+}
+.u-header.u-sticky {
+  position: fixed;
+  top: 0;
+  transition: background-color 250ms ease;
+}
+@supports (position: sticky) {
+  .u-header.u-sticky {
+    position: sticky;
+  }
+}
+@supports (position: -webkit-sticky) {
+  .u-header.u-sticky {
+    position: -webkit-sticky;
+  }
+}
+.u-overlap .u-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.u-header.u-sticky,
+.u-overlap .u-header {
+  z-index: 20;
+}
+.u-overlap .u-header.u-sticky {
+  position: fixed;
+}
+.u-overlap.u-overlap-transparent .u-header {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.u-overlap.u-offcanvas-opened .u-header.u-sticky {
+  z-index: auto;
+  position: absolute !important;
+}
+.u-overlap.u-offcanvas-opened .u-header.u-sticky + section {
+  z-index: -1;
 }
 .u-sheet.u-content-layout {
   display: flex;
@@ -18637,6 +18633,15 @@ a.pswp__share--download:hover {
 .u-accordion.u-spacing-0 .u-accordion-item:not(:last-child) .u-accordion-link[class*=u-border-] ~ .u-accordion-pane,
 .u-accordion:not([class*="u-spacing-"]) .u-accordion-item:not(:last-child) .u-accordion-link[class*=u-border-] ~ .u-accordion-pane {
   border-bottom: none;
+}
+.u-section-row {
+  position: relative;
+}
+.u-section-row.u-sticky-fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 .u-carousel {
   position: relative;
@@ -33671,7 +33676,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: 22px 0 0 auto;
+  margin: 31px 76px 0 auto;
 }
 
 .u-header .u-nav-1 {
@@ -33686,18 +33691,17 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-text-1 {
   font-weight: 700;
-  margin: -52px 949px 39px 40px;
+  margin: -53px 989px 32px 0;
 }
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     width: auto;
-    margin-right: 0;
+    margin-right: 76px;
   }
 
   .u-header .u-text-1 {
-    margin-top: -52px;
+    margin-top: -53px;
     margin-right: 789px;
-    margin-left: 0;
   }
 }
 @media (max-width: 991px) {
